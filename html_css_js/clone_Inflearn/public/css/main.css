@@ -380,11 +380,15 @@ ul {
     font-size:1.3rem;
     color:white;
     text-decoration: none;
+    margin-bottom:0.5rem;
+}
+
+.footer-area .container .fb-like {
+    text-align: right;
 }
 
 .footer-area .container .green {
     background: #22af41;
-    margin-bottom:1rem;
     padding:0.5rem 0;
 }
 
