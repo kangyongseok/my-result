@@ -1,10 +1,14 @@
 <!DOCTYPE html>
-<html>
+<html lang="ko">
 
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <!-- 반응형 웹 디자인을 위한 Viewport 설정 -->
+    <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+    <!-- Internet Explorer에게 최신의 렌더링 엔진을 사용하라고 지시 -->
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <meta name="description" content="포트폴리오용 클론코딩 웹 페이지 입니다.">
+
     <meta property="og:url" content="https://clone-coding-inflearn.firebaseapp.com/" />
     <meta property="og:type" content="website" />
     <meta property="og:title" content="Clone Coding Inflearn" />
@@ -14,22 +18,31 @@
     <!-- google login sdk -->
     <meta name="google-signin-scope" content="profile email">
 
-
-
-
     <title>인프런 - 배움으로 가치를 높이세요</title>
+    
     <link rel="stylesheet" href="./css/login.css">
     <link rel="stylesheet" href="./css/main.css">
     <link rel="stylesheet" href="./css/normalize.css">
+     
+
+     <!--<link rel="stylesheet" href="https://firebasestorage.googleapis.com/v0/b/clone-coding-inflearn.appspot.com/o/css%2Flogin.css?alt=media&token=868e3105-faeb-414b-aec9-06868112a642">
+    <link rel="stylesheet" href="https://firebasestorage.googleapis.com/v0/b/clone-coding-inflearn.appspot.com/o/css%2Fmain.css?alt=media&token=f1243ba1-ee9b-41bc-ae29-116272145a4f">
+    <link rel="stylesheet" href="https://firebasestorage.googleapis.com/v0/b/clone-coding-inflearn.appspot.com/o/css%2Fnormalize.css?alt=media&token=4ef7ef32-311b-4ffd-a9e4-c1320707e684">
+    -->
 
     <script defer src="https://use.fontawesome.com/releases/v5.6.3/js/all.js" integrity="sha384-EIHISlAOj4zgYieurP0SdoiBYfGJKkgWedPHH4jCzpCXLmzVsw1ouK59MuUtP4a1"
         crossorigin="anonymous"></script>
     <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
         crossorigin="anonymous"></script>
 
-    <script src="./js/login.js"></script>
-    <script src="./js/jquery.sticky.js"></script>
-    <script src="./js/main.js"></script>
+     
+        <script src="./js/login.js" async></script>
+    <script src="./js/jquery.sticky.js" defer></script>
+    <script src="./js/main.js" defer></script>
+     
+    <!--<script src="https://firebasestorage.googleapis.com/v0/b/clone-coding-inflearn.appspot.com/o/js%2Fjquery.sticky.js?alt=media&token=9b431558-fa3f-4595-a083-774fbdbd7cdf"></script>
+    <script src="https://firebasestorage.googleapis.com/v0/b/clone-coding-inflearn.appspot.com/o/js%2Flogin.js?alt=media&token=a193b222-c1d7-475b-ab31-f208e9649c86"></script>
+    <script src="https://firebasestorage.googleapis.com/v0/b/clone-coding-inflearn.appspot.com/o/js%2Fmain.js?alt=media&token=e516f496-73ca-49d6-b7bf-a2f153f11414"></script>-->
 
 </head>
 
@@ -41,7 +54,7 @@
                     <h1><a href="#"><img src="https://d81pi4yofp37g.cloudfront.net/wp-content/uploads/logog.png" alt="inflearn"></a></h1>
                 </div>
                 <div class="list">
-                    <nav class="nav">
+                    <nav class="nav" role="navigation">
                         <ul>
                             <li><a href="#">인프런 소개</a></li>
                             <li><a href="#">추천강좌</a></li>
@@ -104,7 +117,7 @@
                 </div>
             </div>
         </section>
-        <section class="contents-area">
+        <main class="contents-area" role="main">
             <div class="ad w-layout">
                 <ul>
                     <li><a href="#"><img src="https://d81pi4yofp37g.cloudfront.net/wp-content/uploads/best3-1.jpg" alt="2018 인프런 올해의 인기차트"></a></li>
@@ -314,7 +327,7 @@
                     </div>
                 </div>
             </div>
-        </section>
+        </main>
         <footer class="footer-area">
             <div class="container w-layout">
                 <div>
