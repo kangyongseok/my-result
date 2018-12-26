@@ -26,6 +26,8 @@ ul {
 
 .header-area .container {
     height:100%;
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
 }
 
@@ -41,34 +43,54 @@ ul {
 }
 
 .header-area a {
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    align-items: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
     height:100%;
     text-decoration: none;
     color:#313131;
+    -webkit-transition: all 0.3s;
+    -o-transition: all 0.3s;
     transition: all 0.3s;
 }
 
 .header-area .list {
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    flex:1;
+    -webkit-box-flex:1;
+        -ms-flex:1;
+            flex:1;
 }
 
 .header-area .nav {
-    flex:2;
+    -webkit-box-flex:2;
+        -ms-flex:2;
+            flex:2;
     font-size:1.2rem;
     font-weight: 600;
 }
 
 .header-area .util {
-    flex: 1;
+    -webkit-box-flex: 1;
+        -ms-flex: 1;
+            flex: 1;
     font-size:0.8rem;
 }
 
 .header-area ul {
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    align-items: center;
-    justify-content: flex-end;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: end;
+        -ms-flex-pack: end;
+            justify-content: flex-end;
     height:100%;
 }
 
@@ -92,11 +114,14 @@ ul {
 }
 
 .top-fix {
+    position: -webkit-sticky;
     position: sticky;
     top:0;
     background: white;
     height:60px;
     border-bottom:1px solid #eeeeee;
+    -webkit-transition:all 1s;
+    -o-transition:all 1s;
     transition:all 1s;
 }
 
@@ -113,9 +138,16 @@ ul {
 
 .main-area .main {
     height:100%;
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    justify-content: center;
-    flex-direction: column;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
 }
 
 .main-area h1 {
@@ -128,26 +160,41 @@ ul {
     width:50%;
     height:100%;
     padding:4rem;
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
     position: relative;
 }
 
 .main-area .search {
     width:100%;
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
 }
 
 .main-area .search form {
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
     width:100%;
     margin: 1rem 0;
 }
 
 .main-area .search input[type="text"] {
-    flex: 1;
+    -webkit-box-flex: 1;
+        -ms-flex: 1;
+            flex: 1;
     border:none;
     background: white;
     font-size:1.2rem;
@@ -164,6 +211,8 @@ ul {
     font-weight: 600;
     padding:0 1rem;
     cursor: pointer;
+    -webkit-transition: all 0.3s;
+    -o-transition: all 0.3s;
     transition: all 0.3s;
 }
 
@@ -191,10 +240,15 @@ ul {
     overflow: hidden;
     margin:0 auto;
     padding:0;
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    align-items: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
     height:100%;
-    flex-wrap: nowrap;
+    -ms-flex-wrap: nowrap;
+        flex-wrap: nowrap;
 }
 
 
@@ -207,9 +261,13 @@ ul {
 }
 
 .main-area .arrow {
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
     width:100%;
-    align-items: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
     height:100%;
     color:white;
     font-size:4rem;
@@ -237,8 +295,12 @@ ul {
 
 /* contents-area */
 .contents-area .ad ul {
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    justify-content: space-between;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
     margin-top:2rem;
 }
 
@@ -275,6 +337,8 @@ ul {
 
 .card .info {
     font-weight: 600;
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
 }
 
@@ -287,6 +351,8 @@ ul {
 .card h4 a {
     text-decoration: none;
     color:#333333;
+    -webkit-transition: all 0.2s;
+    -o-transition: all 0.2s;
     transition: all 0.2s;
 }
 
@@ -303,7 +369,9 @@ ul {
 }
 
 .card .student {
-    flex:1;
+    -webkit-box-flex:1;
+        -ms-flex:1;
+            flex:1;
 }
 
 .card .lecture-info {
@@ -318,16 +386,22 @@ ul {
 
 .new-lecture .card-wrap {
     width:1170px;
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    align-content: space-between;
-    align-items:flex-start;
+    -ms-flex-line-pack: justify;
+        align-content: space-between;
+    -webkit-box-align:start;
+        -ms-flex-align:start;
+            align-items:flex-start;
     overflow: hidden;
     padding-bottom:1rem;
 }
 
 .new-lecture .card-wrap .card {
     margin-right: 2.2rem;
-    box-shadow: 3px 3px 5px rgba(0, 0, 0, 0.12);
+    -webkit-box-shadow: 3px 3px 5px rgba(0, 0, 0, 0.12);
+            box-shadow: 3px 3px 5px rgba(0, 0, 0, 0.12);
 }
 
 .new-lecture .card-wrap .card img {
@@ -349,16 +423,24 @@ ul {
 
 /* card recommend-lecture */
 .recommend-lecture .card-wrap {
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    align-items:flex-start;
-    justify-content:space-between;
-    flex-wrap: wrap;
+    -webkit-box-align:start;
+        -ms-flex-align:start;
+            align-items:flex-start;
+    -webkit-box-pack:justify;
+        -ms-flex-pack:justify;
+            justify-content:space-between;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
 }
 
 .recommend-lecture .card {
     width:280px;
     margin-bottom:1rem;
-    box-shadow: 3px 3px 5px rgba(0, 0, 0, 0.12);
+    -webkit-box-shadow: 3px 3px 5px rgba(0, 0, 0, 0.12);
+            box-shadow: 3px 3px 5px rgba(0, 0, 0, 0.12);
 }
 
 /* footer-area */
@@ -368,8 +450,12 @@ ul {
 }
 
 .footer-area .container {
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    justify-content:space-between;
+    -webkit-box-pack:justify;
+        -ms-flex-pack:justify;
+            justify-content:space-between;
     padding:2rem 0;
 }
 
