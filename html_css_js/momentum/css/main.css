@@ -1,0 +1,206 @@
+* {
+    margin:0;
+    padding:0;
+    color:white;
+}
+
+html,
+body {
+    width:100%;
+    height:100%;
+}
+
+body {
+    background-color: #cccccc;
+}
+
+li {
+    list-style:none;
+}
+
+.wrap {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height:100%;
+}
+
+.momentum-box {
+    text-align: center;
+}
+
+.name-form,
+.greeting,
+.name-remove {
+    display: none;
+}
+
+
+.showing {
+    display: block;
+}
+
+.clock h1 {
+    font-size:5rem;
+}
+
+
+
+.todo-form input,
+.name-form input {
+    background: transparent;
+    border:none;
+    border-bottom:1px solid #ffffff;
+    outline: none;
+    color:white;
+    padding:0.8rem;
+    font-size:2rem;
+    text-align: center;
+    margin:1rem;
+}
+
+
+.name-area button {
+    font-size:1.3rem;
+    padding-top:7px;
+}
+
+.todo-list {
+    margin:1rem;
+}
+
+.todo-list button {
+    font-size:1.3rem;
+}
+
+.todo-list li {
+    display: flex;
+    border-bottom:1px solid #eeeeee;
+    padding:0.5rem;
+    font-size:1.2rem;
+}
+
+.todo-list li span {
+    cursor: pointer;
+    display: block;
+    margin-right:auto;
+}
+
+.todo-list li .complete {
+    text-decoration:line-through;
+    color:gray;
+}
+
+.todo-list li:hover {
+    background: rgba(0, 0, 0, 0.3);
+}
+
+
+.todo-list li button {
+    border:none;
+    background: none;
+    cursor: pointer;
+    margin-left:1rem;
+}
+
+.todo-list li button:hover {
+    color:red;
+}
+
+::-webkit-input-placeholder { /* Chrome/Opera/Safari */
+    color: white;
+    opacity: 0.4;
+  }
+  ::-moz-placeholder { /* Firefox 19+ */
+    color: white;
+    opacity: 0.4;
+  }
+  :-ms-input-placeholder { /* IE 10+ */
+    color: white;
+    opacity: 0.4;
+  }
+  :-moz-placeholder { /* Firefox 18- */
+    color: white;
+    opacity: 0.4;
+  }
+
+.name-remove {
+    color:red;
+    font-weight:600;
+    padding-left:10px;
+    background: none;
+    border:none;
+    text-align: center;
+    cursor: pointer;
+}
+
+.name-area {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size:1.5rem;
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    } to {
+        opacity: 1;
+    }
+}
+
+.bgImage {
+    position: absolute;
+    top:0;
+    left:0;
+    width:100%;
+    height:100%;
+    z-index: -1;
+    animation: fadeIn .5s  linear;
+}
+
+
+.weather {
+    position: absolute;
+    top:2rem;
+    right:2rem;
+}
+
+
+.record,
+.record-delete {
+    background: rgba(255, 255, 255, 0.3);
+    width:20%;
+    height:400px;
+    position: absolute;
+    top:5rem;
+    right:2rem;
+    padding:1.3rem;
+    box-sizing: border-box;
+    overflow-y: scroll;
+}
+
+.record-delete {
+    top:32rem;
+}
+
+.record h4,
+.record-delete h4 {
+    font-size:1.2rem;
+    text-align: center;
+    border-bottom:1px solid #ffffff;
+    padding-bottom:1rem;
+}
+
+.record li {
+    margin:1rem;
+    background: #4CAF50;
+    padding:0.5rem;
+}
+
+.record-delete li {
+    margin:1rem;
+    background: #DC4E41;
+    padding:0.5rem;
+}
