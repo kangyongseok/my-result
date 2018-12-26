@@ -40,7 +40,9 @@ $(document).ready(function () {
 
     window.fbAsyncInit = function () {
         FB.init({
-            appId: '2294227343980912',
+            //2294227343980912 test
+            // 963146510555981 firebase
+            appId: '963146510555981',
             cookie: true,
 
             xfbml: true,
@@ -109,7 +111,8 @@ $(document).ready(function () {
             var googleAuth = gapi.auth2.init({
                 // 테스트용 157137554064-quoo1873d98og6al1lvkr9dbus7701b9.apps.googleusercontent.com
                 //firebase 업로드용 
-                client_id: '157137554064-quoo1873d98og6al1lvkr9dbus7701b9.apps.googleusercontent.com'
+                //60054540194-40udkq8om77vkdu7o22vn3dgdhmcjjsq.apps.googleusercontent.com
+                client_id: '60054540194-40udkq8om77vkdu7o22vn3dgdhmcjjsq.apps.googleusercontent.com'
             })
             googleAuth.then(function () {
                 console.log('googleAuth seccess');
