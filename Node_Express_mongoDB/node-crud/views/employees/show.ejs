@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Show List</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/semantic-ui/2.2.9/semantic.min.css"/>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/semantic-ui/2.2.9/semantic.min.js"></script>
+    <style>
+        .container {
+            background: #f1f1f1;
+            padding:20px;
+            width:500px;
+            height:500px;
+            margin:0 auto;
+            margin-top:100px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h3><a href="/employees">Employee List</a></h3>
+        <h1>Employee Detail</h1>
+        <table class="ui celled table">
+            <tbody>
+                <tr>
+                    <td>Name</td>
+                    <td>:</td>
+                    <td><%= employee.name %></td>
+                </tr>
+                <tr>
+                    <td>Address</td>
+                    <td>:</td>
+                    <td><%= employee.address%></td>
+                </tr>
+                <tr>
+                    <td>Position</td>
+                    <td>:</td>
+                    <td><%= employee.position %></td>
+                </tr>
+                <tr>
+                    <td>Salary</td>
+                    <td>:</td>
+                    <td><%= employee.salary %></td>
+                </tr>
+            </tbody>
+        </table>
+        <h3><a href="/employees/edit/<%= employee._id %>" class="ui orange button">EDIT</a></h3>
+        <form action="/employees/delete/<%= employee._id %>" method="post">
+            <button type="submit" class="ui red button">DELETE</button>
+        </form>
+    </div>
+</body>
+</html>

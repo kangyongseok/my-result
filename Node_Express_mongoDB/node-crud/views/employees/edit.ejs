@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Edit Employee</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/semantic-ui/2.2.9/semantic.min.css"/>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/semantic-ui/2.2.9/semantic.min.js"></script>
+    <style>
+        .container {
+            background: #f1f1f1;
+            padding:20px;
+            width:500px;
+            height:600px;
+            margin:0 auto;
+            margin-top:100px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h3><a href="/employees">Employee List</a></h3>
+        <h1>Edit Employee</h1>
+        <form action="/employees/update/<%= employee._id %>" method="post">
+            <table class="ui celled table" style="width:100%;">
+                <tbody>
+                    <tr>
+                        <td>Name</td>
+                        <td class="ui input">
+                            <input type="text" name="name" value="<%= employee.name%>" />
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>Address</td>
+                        <td class="ui form">
+                            <textarea name="address">
+                                <%= employee.address %>
+                            </textarea>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>Position</td>
+                        <td class="ui input">
+                            <input type="text" name="position" value="<%= employee.position %>">
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>Salary</td>
+                        <td class="ui input">
+                            <input type="number" name="salary" value="<%= employee.salary %>">
+                        </td>
+                    </tr>
+                    <tr>
+                        <td><button type="submit" class="ui green button">Update</button></td>
+                    </tr>
+                </tbody>
+            </table>
+        </form>
+    </div>
+</body>
+</html>

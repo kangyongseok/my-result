@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Create Employee</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/semantic-ui/2.2.9/semantic.min.css"/>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/semantic-ui/2.2.9/semantic.min.js"></script>
+    <style>
+        .container {
+            background: #f1f1f1;
+            padding:20px;
+            width:500px;
+            height:500px;
+            margin:0 auto;
+            margin-top:100px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h3><a href="/employees">Employee List</a></h3>
+        <h1>Create New Employee</h1>
+        <form action="/employees/save" method="post" class="ui input">
+            <table class="ui input celled table">
+                <tbody>
+                    <tr>
+                        <td>Name</td>
+                        <td><input type="text" name="name"></td>
+                    </tr>
+                    <tr>
+                        <td>Address</td>
+                        <td><textarea name="address"></textarea></td>
+                    </tr>
+                    <tr>
+                        <td>Position</td>
+                        <td><input type="text" name="position"></td>
+                    </tr>
+                    <tr>
+                        <td>Salary</td>
+                        <td><input type="number" name="salary"></td>
+                    </tr>
+                    <tr>
+                        <td><input type="submit" value="Save" class="ui green button"></td>
+                    </tr>
+                </tbody>
+            </table>
+        </form>
+    </div>
+</body>
+</html>
