@@ -1,0 +1,219 @@
+@import url('https://fonts.googleapis.com/css?family=Noto+Sans+KR|Open+Sans');
+
+html, body {
+    width:100%;
+    height:100%;
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+* {
+    font-family: 'Open Sans','Noto Sans KR', sans-serif;
+    -moz-box-sizing: inherit;
+    -webkit-box-sizing: inherit;
+    box-sizing: inherit;
+}
+
+ul {
+    list-style:none;
+}
+
+button {
+    border:none;
+    background:none;
+    cursor: pointer;
+    outline: none;
+}
+
+/* header */
+.header-area {
+    width:100%;
+    height:80px;
+    position: relative;
+    background:#3c5a9a;
+}
+
+.header-area .logo {
+    width:65%;
+    height:inherit;
+    margin:0 auto;
+    padding:10px;
+}
+
+.header-area .logo img {
+    width:50px;
+    float:left;
+}
+
+.header-area .logo .logo-txt {
+    width:67%;
+    font-size:0.5rem;
+    float:left;
+    margin-left:10px;
+    line-height:0.9rem;
+    color:white;
+}
+
+.header-area .logo .logo-txt .title {
+    font-size:1rem;
+    margin:0.3rem 0;
+}
+
+.header-area .btn {
+    font-size:1.5rem;
+    line-height:80px;
+    color:white;
+}
+
+.header-area .menu-btn {
+    position: absolute;
+    top:0;
+    left:20px;
+}
+
+.header-area .alert-btn {
+    position: absolute;
+    top:0;
+    right:20px;
+}
+
+.header-area .nav-wrap {
+    width:100%;
+    top:80px;
+    display: none;
+}
+
+.header-area .nav-wrap .nav-area {
+    background:white;
+}
+
+
+.header-area .nav-wrap .nav-area a {
+    display: block;
+    text-align: center;
+    border-bottom:1px solid #3c5a9a;
+    padding: 2rem 0;
+    text-decoration:none;
+    color:#3c5a9a;
+    font-weight: 600;
+}
+
+/* contents */
+.contents-area {
+    padding-top:0.5rem;
+}
+
+.contents-area .board .board-tab {
+    border:1px solid #3c5a9a;
+    border-radius: 0.5rem;
+    width:100%;
+    float:left;
+}
+
+.contents-area .board .board-tab li {
+    float:left;
+    width:33.3%;
+    text-align:center;
+    padding:5px;
+    font-size:0.8rem;
+}
+
+.contents-area .board .board-tab li:first-child {
+    border-radius: 0.5rem 0 0 0.5rem;
+}
+
+.contents-area .board .board-tab li:last-child {
+    border-radius: 0 0.5rem 0.5rem 0;
+}
+
+.contents-area .board .board-tab li:nth-child(2) {
+    border-right:1px solid #3c5a9a;
+    border-left:1px solid #3c5a9a;
+}
+
+.contents-area .board .board-tab .on {
+    background: #3c5a9a;
+    color:white;
+}
+
+.contents-area .board .board-contents div {
+    clear:both;
+    padding-top:1rem;
+}
+
+.contents-area .board .board-contents .board-title {
+    height:2rem;
+    background: #eeeeee;
+    padding:0.5em;
+}
+
+.contents-area .board .board-contents .board-title h2 {
+    float:left;
+}
+
+.contents-area .board .board-contents .board-title p {
+    float:right;
+    font-size:0.8rem;
+    color:#666666;
+    cursor:pointer;
+}
+
+.contents-area .board .board-contents table {
+    font-size:0.9rem;
+    text-align:center;
+    table-layout:fixed;
+    width:100%;
+}
+
+.contents-area .board .board-contents table th, 
+.contents-area .board .board-contents table td {
+    border-bottom:1px solid #cccccc;
+    padding:0.7rem;
+}
+
+.contents-area .board .board-contents table td:nth-child(2) span {
+    width:100%;
+    display: block;
+    overflow: hidden;
+    white-space:nowrap;
+    text-overflow: ellipsis;
+}
+
+.contents-area .board .board-contents .cont-box {
+    display:none;
+}
+
+.contents-area .board .board-contents .visible {
+    display: block;
+}
+
+.contents-area .event {
+    margin-top:1rem;
+}
+
+.contents-area .event .event-banner img {
+    width:100%;
+}
+
+.calender-area {
+    padding:1rem;
+}
+
+
+#Datepickk {
+    padding:10px;
+    height:auto;
+}
+
+#Datepickk .d-tables {
+    display: block;
+}
+
+#Datepickk .d-table input+label {
+    height:2rem;
+}
+
+#Datepickk .d-header {
+    background: #3c5a9a;
+}
