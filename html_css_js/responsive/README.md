@@ -6,6 +6,9 @@
 - 웹폰트 : [https://fonts.google.com/](https://fonts.google.com/)
 - underscore.js : [https://underscorejs.org/](https://underscorejs.org/)
 - jQuery : [https://jquery.com/](https://jquery.com/)
+- FullPage.js: [https://alvarotrigo.com/fullPage/ko/#page1](https://alvarotrigo.com/fullPage/ko/#page1)
+- FullPage.js OPTION : [https://github.com/alvarotrigo/fullPage.js/tree/2.9.7](https://github.com/alvarotrigo/fullPage.js/tree/2.9.7)
+
 
 내용
 ===

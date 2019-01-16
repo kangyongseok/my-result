@@ -1,0 +1,13 @@
+.footer-area {
+    width:100%;
+    background:#f1f1f1;
+    padding:1rem;
+    font-size:0.84rem;
+    clear:both;
+}
+
+.footer-area p {
+    margin-bottom:0.5rem;
+    line-height:1rem;
+    text-align: center;
+}

@@ -1,0 +1,14 @@
+@media (min-width: 576px) {
+    .greeting-area img {
+        float: left;
+        margin-right:1rem;
+    }
+
+}
+
+@media (min-width: 992px) { 
+    .footer-area {
+        position: absolute;
+        bottom:0;
+    }
+}

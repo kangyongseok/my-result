@@ -26,6 +26,8 @@ button {
     outline: none;
 }
 
+
+
 /* header */
 .header-area {
     width:100%;
@@ -35,9 +37,8 @@ button {
 }
 
 .header-area .logo {
-    width:65%;
+    width:67%;
     height:inherit;
-    margin:0 auto;
     padding:10px;
 }
 
@@ -69,17 +70,14 @@ button {
 .header-area .menu-btn {
     position: absolute;
     top:0;
-    left:20px;
-}
-
-.header-area .alert-btn {
-    position: absolute;
-    top:0;
     right:20px;
 }
 
+
 .header-area .nav-wrap {
     width:100%;
+    position: absolute;
+    z-index: 99999;
     top:80px;
     display: none;
 }
@@ -102,13 +100,55 @@ button {
 /* contents */
 .contents-area {
     padding-top:0.5rem;
+    clear: both;
 }
 
+/* VIDEO */
+
+.video-area {
+    min-width: 100%; 
+    min-height: 100%;
+}
+
+.video {
+    position:relative;
+}
+
+.video video {
+    width:100%;
+    margin-bottom:1rem;
+}
+
+.video-area .content {
+    position: absolute;
+    bottom:0;
+    left:0;
+    background: rgba(0, 0, 0, 0.5);
+    color: #f1f1f1;
+    width: 100%;
+    padding: 10px;
+    height:5rem;
+}
+
+.video-area .content h1 {
+    float:left;
+}
+
+/* Board */
 .contents-area .board .board-tab {
     border:1px solid #3c5a9a;
     border-radius: 0.5rem;
     width:100%;
     float:left;
+}
+
+.contents-area h1 {
+    border-bottom:1px solid #cccccc;
+    padding-bottom:0.5rem;
+    margin-bottom:1rem;
+    font-size:1.5rem;
+    margin-top:2rem;
+    color:#3c5a9a;
 }
 
 .contents-area .board .board-tab li {
@@ -197,12 +237,14 @@ button {
 }
 
 .calender-area {
-    padding:1rem;
+    margin-bottom:2rem;
+    padding:10px;
 }
 
+/* 달력 */
 
 #Datepickk {
-    padding:10px;
+    /* padding:10px; */
     height:auto;
 }
 
@@ -216,4 +258,33 @@ button {
 
 #Datepickk .d-header {
     background: #3c5a9a;
+}
+
+#Datepickk.inline.d-show .d-calendar {
+    box-shadow: 3px 3px 10px 3px rgba(0, 0, 0, 0.3);
+}
+
+#myBtn {
+    background: #3c5a9a;
+    float: right;
+    color:white;
+    padding:0.5rem 1.5rem;
+}
+
+.scroll-top {
+    position: fixed;
+    bottom:1rem;
+    right:1rem;
+    background: rgba(0, 0, 0, 0.7);
+    border-radius: 50%;
+    width:50px;
+    height:50px;
+    text-align: center;
+    display: none;
+    z-index:999;
+}
+.scroll-top button {
+    line-height: 45px;
+    color:white;
+    font-size:2rem;
 }

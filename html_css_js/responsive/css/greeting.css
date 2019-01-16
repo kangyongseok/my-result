@@ -1,0 +1,40 @@
+.contents-area {
+    padding:0.5rem;
+}
+
+.contents-area h2 {
+    background: #eeeeee;
+    font-size:1.4rem;
+    padding:1rem;
+}
+
+.contents-area .fixed {
+    position:fixed;
+    width:100%;
+    left:0;
+    top:0;
+}
+
+.contents-area h2 span {
+    font-size:0.8rem;
+    color:#666666;
+    float:right;
+    text-align:end;
+}
+
+.contents-area .greeting-area {
+    text-align: center;
+}
+
+.contents-area .greeting-area p {
+    text-align: justify;
+    font-size:1rem;
+    line-height:1.5rem;
+    margin:1rem 0;
+}
+
+.sign {
+    text-align: right;
+    line-height:1.7rem;
+    margin-top:2rem;
+}

@@ -7,9 +7,10 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css" integrity="sha384-UHRtZLI+pbxtHCWp1t77Bi1L4ZtiqrqD80Kn4Z8NTSRyMA2Fd33n5dQ8lWUE00s/" crossorigin="anonymous">
     <link rel="stylesheet" href="./css/reset.css">
-    <link rel="stylesheet" href="./css/viewport.css">
     <link rel="stylesheet" href="./css/datepickk.min.css">
     <link rel="stylesheet" href="./css/main.css">
+    <link rel="stylesheet" href="./css/footer.css">
+    <link rel="stylesheet" href="./css/viewport.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/fullcalendar/3.10.0/fullcalendar.min.css">
     <script src="https://unpkg.com/scrollreveal"></script>
     <script>
@@ -23,7 +24,8 @@
     <script src="./js/tabPlugin.js"></script>
     <script src="./js/header.js"></script>
     <script src="./js/contents.js"></script>
-    <script src="js/datepickk.min.js"></script>
+    <script src="./js/datepickk.min.js"></script>
+    <script src="./js/video.js"></script>
     
     <title>반응형 Template</title>
     <!-- html5shiv: IE9 이하에서 시멘틱 태그 인식 / respond: IE9 이하에서 미디어 쿼리인식 / placeholders: IE8 에서 placeholder 적용 -->
@@ -42,34 +44,49 @@
 <body>
     <div class="wrap">
         <header class="header-area">
-            <h1 class="logo">
-                <img src="./img/logo.png" alt="대한미세수술학회 LOGO">
+            <div class="header-wrap">
+                <h1 class="logo">
+                <a href="./index.html"><img src="./img/logo.png" alt="대한미세수술학회 LOGO"></a>
                 <div class="logo-txt">
                     <p class="title">대한미세수술학회</p>
                     <p class="sub-title">THE KOREAN SOCIETY FOR MICROSURGERT</p>
                 </div>
-            </h1>
-            <button class="btn menu-btn js-menu-btn">
-                <i class="fas fa-bars"></i>
-            </button>
-            <button class="btn alert-btn">
-                <i class="fas fa-bell"></i>
-            </button>
-            <div class="nav-wrap js-nav-wrap">
-                <nav class="nav-area ">
-                    <ul>
-                        <li><a href="#">학회소개</a></li>
-                        <li><a href="#">학회간행물</a></li>
-                        <li><a href="#">학술행사안내</a></li>
-                        <li><a href="#">회원광장</a></li>
-                        <li><a href="#">위원회</a></li>
-                        <li><a href="#">관련사이트</a></li>
-                    </ul>
-                </nav>
+                </h1>
+                <button class="btn menu-btn js-menu-btn">
+                    <i class="fas fa-bars"></i>
+                </button>
+                <div class="nav-wrap js-nav-wrap">
+                    <nav class="nav-area ">
+                        <ul>
+                            <li><a href="./greeting.html">학회소개</a></li>
+                            <li><a href="./publications.html">학회간행물</a></li>
+                            <li><a href="#">학술행사안내</a></li>
+                            <li><a href="#">회원광장</a></li>
+                            <li><a href="#">위원회</a></li>
+                            <li><a href="#">관련사이트</a></li>
+                        </ul>
+                    </nav>
+                </div>
             </div>
         </header>
+
+        <section class="video-area">
+            <div class="video">
+                    <video autoplay muted loop id="myVideo">
+                    <source src="./img/video.mp4" type="video/mp4">
+                    Your browser does not support HTML5 video.
+                    </video>
+                    <div class="content">
+                        <h1>척추유합술</h1>
+                        <button id="myBtn">Pause</button>
+                    </div>
+            </div>
+            
+        </section>
+
         <div class="contents-area">
             <section class="board">
+                <h1>Board</h1>
                 <div class="board-tab">
                     <ul>
                         <li>Notice</li>
@@ -149,33 +166,59 @@
                     </div>
                 </div>
             </section>
-            <script>
-                $(document).ready(function() {
-                    var now = new Date();
-                    var datepicker = new Datepickk({
-                        container: $(".view-calender"),
-                        inline:true,
-                        range: true,
-                        tooltips: {
-							date: new Date(),
-							text: 'Tooltip'
-						}
-                    });
-                })
-            </script> 
+            
             <section class="event">
+                    <h1>Event</h1>
                 <div class="event-banner">
                     <a href="#">
                         <img src="http://www.microsurgery.or.kr/img/banner/banner_180731.jpg" alt="2018 추계학술대회">
                     </a>
                 </div>
+                
             </section>
+
             <section class="calender-area">
-                <div class="view-calender"></div>
+                    <h1>Schedule</h1>
+                <div class="view-calender" id="demoPicker"></div>
             </section>
+            <script>
+                var now = new Date();
+                var demoPicker = new Datepickk({
+                    container: document.querySelector('#demoPicker'),
+                    inline:true,
+                    range: true,
+                    tooltips: {
+                        date: new Date(),
+                        text: 'Tooltip'
+                    },
+                    highlight:{
+                        start: new Date(now.getFullYear(),now.getMonth(),3),
+                        end: new Date(now.getFullYear(),now.getMonth(),6),
+                        backgroundColor:'#05676E',
+                        color:'#fff',
+                        legend: 'Highlight'
+                    }
+                });
+            </script>
+
         </div>
         <!-- CONTENTS-AREA END -->
 
+        <footer class="footer-area">
+            <p>[16247] 경기도 수원시 팔달구 중부대로 93(지동) (가톨릭대학교 성빈센트병원 정형외과 의국)</p>
+            <p>
+                TEL : 031-249-7186 FAX : 031-254-7186 E-mail : gamjang@catholic.ac.kr
+            </p>
+            <p>           
+                Copyright 2005 by The Korean Society for Microsurgery. All rights reserved. 
+            </p>
+        </footer>
+    </div>
+
+    <div class="scroll-top">
+        <button>
+            <i class="fas fa-angle-double-up"></i>
+        </button>
     </div>
     
 </body>
